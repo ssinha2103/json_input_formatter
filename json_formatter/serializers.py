@@ -2,7 +2,7 @@ from rest_framework import serializers
 
 
 class JsonRequestSerializer(serializers.Serializer):
-    data = serializers.JSONField()
+    data = serializers.JSONField(required=False)
 
 
 class JsonResponseSerializer(serializers.Serializer):
