@@ -14,3 +14,5 @@ docker run -d --name db -e POSTGRES_DB=django -e POSTGRES_USER=django -e POSTGRE
 
 # Run the Django application container
 docker run -d -p 8000:8000 --name web --link db:db -e DATABASE_URL=postgres://django:django@db:5432/django json_input_formatter
+
+docker-compose run web python manage.py migrate

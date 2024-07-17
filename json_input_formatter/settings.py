@@ -139,6 +139,9 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 
+# Ensure the directory exists
+os.makedirs(os.path.join(BASE_DIR, 'static'), exist_ok=True)
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
