@@ -27,7 +27,11 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-ork2$79w7s1v&bn&w!a7caafzm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'False')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'ec2-13-60-81-45.eu-north-1.compute.amazonaws.com',
+    'localhost',
+    '127.0.0.1'
+]
 
 
 # Application definition
